@@ -1,6 +1,10 @@
-class Fleet(object):											    
+#CA2 - Car Dealership "Aungier Car Rental" 
+#Student Number: 10352221
+#https://github.com/AndrewKennyDBS/programming_big_data_10352221.git
+
+class Fleet(object):			            	    #Implement Fleet object						    
     
-    def __init__(self):
+    def __init__(self):                              
         self.__engine = ''
         self.__stock = 0
 
@@ -16,7 +20,7 @@ class Fleet(object):
     def setStock(self, stock):
         self.__stock = stock
 
-class PetrolCar(Fleet):
+class PetrolCar(Fleet):                             #Implement Petrol Car class
     def __init__(self):
 		Fleet.__init__(self)
 		self.__engine = 'petrol'
@@ -28,7 +32,7 @@ class PetrolCar(Fleet):
     def setPetrolStock (self, PetrolStock):
         self.__stock = PetrolStock
                
-class DieselCar(Fleet):
+class DieselCar(Fleet):                             #Implement Diesel Car class
     def __init__(self):
 		Fleet.__init__(self)
 		self.__engine = 'diesel'
@@ -40,7 +44,7 @@ class DieselCar(Fleet):
     def setDieselStock (self, DieselStock):
         self.__stock = DieselStock
          
-class ElectricCar(Fleet):
+class ElectricCar(Fleet):                           #Implement Electric Car class
     def __init__(self):
 		Fleet.__init__(self)
 		self.__engine = 'electric'
@@ -52,7 +56,7 @@ class ElectricCar(Fleet):
     def setElectricStock (self, ElectricStock):
         self.__stock = ElectricStock
                
-class HybridCar(Fleet):
+class HybridCar(Fleet):                             #Implement Hybrid Car class
     def __init__(self):
 		Fleet.__init__(self)
 		self.__engine = 'hybrid'
@@ -64,7 +68,7 @@ class HybridCar(Fleet):
     def setHybridStock (self, HybridStock):
         self.__stock = HybridStock
                
-class CarRental(object):											    
+class CarRental(object):			                #Implement Car Rental object								    
     
     def __init__(self):
         self.__cars = []
